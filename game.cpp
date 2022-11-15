@@ -9,18 +9,18 @@ int main()
 {
 	bool flag=0;
 display();
-string name;			// ALI jutt
+string name;
 int amount;
 char input;
 cout<<"Enter name  :   ";
 getline(cin,name);
 cout<<endl;
-cout<<"Enter input your amount $ :   ";
+cout<<"Enter input your amount :    ";
 cin>>amount;
 cout<<endl;
+rules();
 do
 {
-rules();
 //game code
 int deposit;
 label1:
@@ -34,7 +34,7 @@ if(deposit>amount)
 	goto label1;
 }
 
-int ball=rand()%10+1; 
+int ball=rand()%10+1;
 int guess;
 label2:
 cout<<"Enter input method : "<<endl;
@@ -79,7 +79,7 @@ else if(guess==3)
 	else
 	{
 		flag=0;
-	}	
+	}
 }
 else
 {
@@ -97,7 +97,7 @@ else
 {
 	cout<<"Sorry ";
 	cout<<"You lose $"<<deposit<<endl;
-amount=amount-deposit;	
+amount=amount-deposit;
 }
 cout<<"Would you like to play again y/n 		:		";
 cin>>input;
@@ -114,13 +114,13 @@ cout<<"\n\n*********************************************************************
 }
 void display()
 {
-		
+
 string var="\n=========================================================================================="
  "\n   CCCCC      A        SSSSSSSSS   IIIIIIIII  NN     NN    OOOOOOOO     "
  "\n CC          A  A      SS             III     NN N   NN   OO      OO    "
  "\nCC          A    A     SSSSSSSSS      III     NN  N  NN   OO      OO    "
- "\n CC        AAAAAAAA           SS      III     NN   N NN   OO      OO   " 
- "\n   CCCCC  A        A   SSSSSSSSS   IIIIIIIII  NN     NN    OOOOOOOO   "  
+ "\n CC        AAAAAAAA           SS      III     NN   N NN   OO      OO   "
+ "\n   CCCCC  A        A   SSSSSSSSS   IIIIIIIII  NN     NN    OOOOOOOO   "
  "\n===============================================================================================\n";
  for(int i=0;i<var.size();i++)
  {
